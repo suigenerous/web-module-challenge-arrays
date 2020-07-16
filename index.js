@@ -174,7 +174,10 @@ For example, getAverageWordLength(originalFlavors) should return a number betwee
 
 function getAverageWordLength(arr){
     let wordCount = 0;
-    for (i=0; i<arr.length; 
+    for (let i=0; i<arr.length; i++){
+        wordCount = arr[i].split(" ").length + wordCount;
+    }
+    return wordCount/arr.length;
 }
 
 
